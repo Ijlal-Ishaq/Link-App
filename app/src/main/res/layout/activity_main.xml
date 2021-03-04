@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="11dp"
+            android:background="@drawable/profile"
+            android:elevation="5sp"
+            android:onClick="profile_setting">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_thin"
+                android:text="USERNAME"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto_thin"
+                android:text="email"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="130sp"
+                android:layout_height="130sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:tint="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/menu" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="11dp"
+            android:background="@drawable/profile"
+            android:elevation="5sp"
+            android:onClick="goto_contacts">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/roboto_thin"
+                android:text="Contacts"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="11dp"
+                android:tint="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/arrowr" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/profile"
+            android:onClick="goto_directories">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/roboto_thin"
+                android:text="Directories"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_marginEnd="11dp"
+                android:tint="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/arrowr" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:paddingLeft="9sp"
+            android:paddingTop="9sp"
+            android:paddingRight="9sp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
